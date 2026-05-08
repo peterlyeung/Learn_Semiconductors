@@ -277,7 +277,7 @@ timeline
     1988 : Founded by Eli Harari
          : Harari held key patents on flash memory cells
     1991 : First flash card product
-         : 20 MB for $1000
+         : 20 MB for 1000 USD
     1994 : CompactFlash format
          : Became standard for cameras
     2000 : SD Card standard
@@ -287,7 +287,7 @@ timeline
     2008 : 32 GB SDHC
          : High-speed cards
     2016 : Acquired by Western Digital
-         : $19 billion deal
+         : 19 billion USD deal
     2020 : WD + SanDisk = combined brand
          : "Western Digital | SanDisk"
     2024 : WD announces SanDisk spin-off

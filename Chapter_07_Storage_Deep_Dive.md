@@ -7,13 +7,13 @@ Storage is where data lives when it's not actively being computed. The key tensi
 ```mermaid
 flowchart TD
     subgraph Hierarchy["Full Storage Hierarchy"]
-        CPU_Regs["CPU Registers\n~KB, sub-ns, $$$$$\nInside the CPU"]
-        L1L2L3["CPU Cache (SRAM)\n~MB, 1-40 ns, $$$$\nInside the CPU die"]
-        DRAM2["DRAM\n8 GB - 2 TB, ~100 ns, $$\nDIMMs/LPDDR modules"]
-        NVMe2["NVMe SSD\n512 GB - 16 TB, ~100 µs, $0.10/GB\nM.2/U.2 slots, PCIe"]
-        SATA_SSD["SATA SSD\n256 GB - 4 TB, ~200 µs, $0.07/GB\n2.5 inch bay or M.2 B-M key"]
-        HDD["HDD\n1 TB - 24 TB, ~5-10 ms, $0.02/GB\n3.5 inch bay, spinning"]
-        Tape["Tape Archive\nPB scale, minutes, <$0.001/GB\nAWS Glacier / enterprise backup"]
+        CPU_Regs["CPU Registers\n~KB, sub-ns, very expensive\nInside the CPU"]
+        L1L2L3["CPU Cache (SRAM)\n~MB, 1-40 ns, expensive\nInside the CPU die"]
+        DRAM2["DRAM\n8 GB - 2 TB, ~100 ns, ~3-5 USD/GB\nDIMMs/LPDDR modules"]
+        NVMe2["NVMe SSD\n512 GB - 16 TB, ~100 us, ~0.10 USD/GB\nM.2 or U.2 slots, PCIe"]
+        SATA_SSD["SATA SSD\n256 GB - 4 TB, ~200 us, ~0.07 USD/GB\n2.5 inch bay or M.2 B-M key"]
+        HDD["HDD\n1 TB - 24 TB, ~5-10 ms, ~0.02 USD/GB\n3.5 inch bay, spinning"]
+        Tape["Tape Archive\nPB scale, minutes, ~0.001 USD/GB\nAWS Glacier / enterprise backup"]
 
         CPU_Regs --> L1L2L3 --> DRAM2 --> NVMe2 --> SATA_SSD --> HDD --> Tape
     end
@@ -144,7 +144,7 @@ This relationship is complicated but important:
 ```mermaid
 flowchart TD
     History["History"]
-    History --> WD_Buy["Western Digital acquires SanDisk\n2016, $19B\nGoal: become NAND + HDD company"]
+    History --> WD_Buy["Western Digital acquires SanDisk\n2016, 19B USD\nGoal: become NAND + HDD company"]
     WD_Buy --> JV2["Joint Venture with Kioxia\n(formerly Toshiba Memory)\nFabs in Yokkaichi & Kitakami, Japan"]
     JV2 --> Products_Made["Products manufactured:\n- Flash chips (BiCS NAND)\n- Used in SanDisk + WD branded products\n- Sold as raw NAND to others"]
 
@@ -187,10 +187,10 @@ NAND flash is notorious for dramatic price swings — this affects everything fr
 ```mermaid
 flowchart TD
     Oversupply["Oversupply\n(too many chips, not enough buyers)"]
-    Oversupply --> PriceFall["Prices collapse\nManufacturers lose money\n(sometimes $0.02/GB → $0.03/GB → $0.05/GB)"]
+    Oversupply --> PriceFall["Prices collapse\nManufacturers lose money\n(0.02 to 0.05 USD/GB range)"]
     PriceFall --> CutProduction["Companies cut production\nDelay new fabs\nFire workers"]
     CutProduction --> Shortage["Supply shortage"]
-    Shortage --> PriceRise["Prices spike\n(back to $0.08-0.12/GB)"]
+    Shortage --> PriceRise["Prices spike\n(back to 0.08-0.12 USD/GB)"]
     PriceRise --> CapEx["Companies invest in new fabs\nHire again, expand"]
     CapEx --> Oversupply
 ```

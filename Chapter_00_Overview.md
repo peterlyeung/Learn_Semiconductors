@@ -135,7 +135,7 @@ flowchart TD
 ## Market Segments
 
 ```mermaid
-pie title Global Semiconductor Revenue (~$600B/year)
+pie title Global Semiconductor Revenue (approx 600B USD/year)
     "Logic (CPUs, GPUs, SoCs)" : 35
     "Memory (DRAM + NAND)" : 25
     "Foundry Services" : 15

@@ -60,7 +60,7 @@ flowchart LR
     Purify --> Crystal["Czochralski Process\nSeed crystal pulled\nfrom molten silicon\n→ Silicon Boule"]
     Crystal --> Slice["Diamond wire saw\nSlice into 300mm wafers\n~1mm thick"]
     Slice --> Polish["Chemical Mechanical\nPolishing (CMP)\nAtomic-level smooth"]
-    Polish --> Ready["Ready for fab\n~$200 per wafer"]
+    Polish --> Ready["Ready for fab\n~200 USD per wafer"]
 ```
 
 **300mm (12 inch)** wafers are the industry standard for advanced chips. Larger wafer = more chips per wafer = lower cost per chip.
@@ -115,7 +115,7 @@ flowchart TD
     ASML --> Machine["One EUV Machine:"]
     Machine --> Weight["~180 tonnes"]
     Machine --> Parts["~100,000 components"]
-    Machine --> Price["~$200M per machine\n(High-NA: ~$380M)"]
+    Machine --> Price["~200M USD per machine\n(High-NA: ~380M USD)"]
     Machine --> Delivery["18+ month lead time"]
     Machine --> Speed["Exposes 170 wafers/hour"]
 ```
@@ -254,13 +254,13 @@ The US CHIPS and Science Act (2022) allocated **$52.7 billion** to rebuild US se
 
 ```mermaid
 flowchart TD
-    CHIPS["US CHIPS and Science Act\n$52.7 billion (2022)"]
+    CHIPS["US CHIPS and Science Act\n52.7 billion USD (2022)"]
     
-    CHIPS --> TSMC_AZ["TSMC Arizona\nPhoenix, AZ\n$65B total investment\nFab 21: N4P → N3 → N2\nFirst wafers: 2024"]
-    CHIPS --> Intel_OH["Intel Ohio\nColumbus, OH\n$20B+\nIntel 18A / 14A\n2026+"]
-    CHIPS --> Micron_NY["Micron New York\nClay, NY\n$100B over 20 years\nDRAM fabs\nFirst production: 2025"]
-    CHIPS --> Samsung_TX["Samsung Texas\nTaylor, TX\n$17B\n4nm → 2nm fabs"]
-    CHIPS --> GF_NY["GlobalFoundries\nMalta, NY\n$1.5B\nMature nodes for defense"]
+    CHIPS --> TSMC_AZ["TSMC Arizona\nPhoenix, AZ\n65B USD total investment\nFab 21: N4P to N3 to N2\nFirst wafers: 2024"]
+    CHIPS --> Intel_OH["Intel Ohio\nColumbus, OH\n20B+ USD\nIntel 18A / 14A\n2026+"]
+    CHIPS --> Micron_NY["Micron New York\nClay, NY\n100B USD over 20 years\nDRAM fabs\nFirst production: 2025"]
+    CHIPS --> Samsung_TX["Samsung Texas\nTaylor, TX\n17B USD\n4nm to 2nm fabs"]
+    CHIPS --> GF_NY["GlobalFoundries\nMalta, NY\n1.5B USD\nMature nodes for defense"]
 ```
 
 **Why the US is doing this:**
