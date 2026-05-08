@@ -12,7 +12,7 @@ flowchart TD
         DRAM2["DRAM\n8 GB - 2 TB, ~100 ns, $$\nDIMMs/LPDDR modules"]
         NVMe2["NVMe SSD\n512 GB - 16 TB, ~100 µs, $0.10/GB\nM.2/U.2 slots, PCIe"]
         SATA_SSD["SATA SSD\n256 GB - 4 TB, ~200 µs, $0.07/GB\n2.5 inch bay or M.2 B-M key"]
-        HDD["HDD\n1 TB - 24 TB, ~5-10 ms, $0.02/GB\n3.5\" bay, spinning"]
+        HDD["HDD\n1 TB - 24 TB, ~5-10 ms, $0.02/GB\n3.5 inch bay, spinning"]
         Tape["Tape Archive\nPB scale, minutes, <$0.001/GB\nAWS Glacier / enterprise backup"]
 
         CPU_Regs --> L1L2L3 --> DRAM2 --> NVMe2 --> SATA_SSD --> HDD --> Tape
